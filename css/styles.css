@@ -838,6 +838,7 @@ body{
 .modal-form-check-field {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-bottom: 30px;
 }
 
@@ -865,7 +866,13 @@ body{
 }
 
 .modal-check-policy-link {
+    text-decoration: underline;
+    line-height: 1.71;
     color: var(--accent-color);
+}
+
+.modal-check-policy-link:hover {
+    text-decoration: none;
 }
 
 .modal-form-check:checked + .modal-form-own-checkbox {
@@ -897,7 +904,6 @@ body{
     display: block;
     min-width: 200;
     padding: 10px 52px;
-    margin-bottom: 40px;
     border: 0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
