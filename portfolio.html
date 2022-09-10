@@ -226,6 +226,25 @@
                     </li>
                 </ul>
             </div>
+            <div class="container-follow">
+                <p class="title-follow">Підпишіться на розсилку</p>
+                <form class="modal-form-follow">
+                    <label class="modal-form-follow-field">
+                        <input
+                        type="email" 
+                        class="modal-form-input-follow" 
+                        required
+                        pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Invalid email address"
+                        name="user_email_follow"
+                        placeholder="E-mail" />
+                    </label>
+                    <button type="submit" class="modal-form-submit-follow">Підписатися
+                        <svg class="modal-form-submit-icon" width="24" height="24">
+                            <use href="./img/sprite.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
     
         </div>
     </footer>

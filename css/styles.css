@@ -715,7 +715,6 @@ body{
     left: 50%;
     transform: translate(-50%,-50%);
     width: 528px;
-    height: 581px;
     padding: 40px;
     background-color: var(--white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -738,6 +737,11 @@ body{
     padding: 0;
 }
 
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+    fill: var(--accent-color);
+}
+
 .modal-form-title {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
@@ -755,6 +759,11 @@ body{
 }
 
 .modal-form-input {
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--color-dark);
     width: 100%;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -781,6 +790,7 @@ body{
 }
 
 .modal-form-field {
+    display: block;
     margin-bottom: 10px;
 }
 
@@ -803,6 +813,10 @@ body{
 }
 
 .modal-form-message {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--color-dark);
     width: 100%;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -828,8 +842,8 @@ body{
 }
 
 .modal-form-own-checkbox {
-    border: 1.5px solid var(--color-dark) ;
-    border-radius: 3px;
+    border: 2px solid var(--color-dark) ;
+    border-radius: 2px;
     cursor: pointer;
     margin-right: 7px;
 }
@@ -896,7 +910,7 @@ body{
 }
 
 .container-follow {
-margin-left: 105px;
+    margin-left: auto;
 }
 
 .title-follow {
@@ -922,7 +936,10 @@ margin-left: 105px;
     font-weight: 400;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
-  
+}
+
+.modal-form-follow-field {
+    display: block;
 }
 
 .modal-form-submit-follow {
@@ -944,11 +961,16 @@ margin-left: 105px;
     transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-form-submit-follow:hover,
+.modal-form-submit-follow:focus {
+    background-color: var(--one-accent-color);
+}
+
 .modal-form-submit-icon {
     margin-left: 10px;
 }
 
-.subscription-mail {
+.modal-form-input-follow {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 16px;
